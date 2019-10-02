@@ -22,6 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
+
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '4wk6%ra3h@95#)!7n3fk8+@f4#xgjydn&e84$=zpf@-a%!n(s$'
 
@@ -82,12 +83,18 @@ WSGI_APPLICATION = 'PerfumeSketch.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
+        'NAME': '',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '',
         'PORT': '3306',
         #'OPTIONS': {
         #    'init_command': 'SET sql_mode="STRICT_TRANS_TABLES"'
         #    }
     }
 }
+AWS_ACCESS_KEY_ID = ''
+AWS_SECRET_ACCESS_KEY = ''
 AWS_REGION = 'us-east-2'
 AWS_STORAGE_BUCKET_NAME = 'django-pk'
 AWS_S3_CUSTOM_DOMAIN = '%s.s3.%s.amazonaws.com'%(AWS_STORAGE_BUCKET_NAME,AWS_REGION)
