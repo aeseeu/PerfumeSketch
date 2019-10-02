@@ -6,6 +6,7 @@
 </head>
 <body>
 {% for post in p %}
+    print("")
     {{ post.title }}
     <img src="{{ post.image.url }}" alt="imggg">
 {% endfor %}
