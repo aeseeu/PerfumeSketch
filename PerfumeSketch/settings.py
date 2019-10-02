@@ -82,18 +82,12 @@ WSGI_APPLICATION = 'PerfumeSketch.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'psdb',
-        'USER': 'ujiiin518',
-        'PASSWORD': 'psdb9999',
-        'HOST': 'psdb9.crebi1vhhpde.us-east-2.rds.amazonaws.com',
         'PORT': '3306',
         #'OPTIONS': {
         #    'init_command': 'SET sql_mode="STRICT_TRANS_TABLES"'
         #    }
     }
 }
-AWS_ACCESS_KEY_ID = 'AKIA6RM3BZCIEWI36CXU'
-AWS_SECRET_ACCESS_KEY = '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'
 AWS_REGION = 'us-east-2'
 AWS_STORAGE_BUCKET_NAME = 'django-pk'
 AWS_S3_CUSTOM_DOMAIN = '%s.s3.%s.amazonaws.com'%(AWS_STORAGE_BUCKET_NAME,AWS_REGION)
